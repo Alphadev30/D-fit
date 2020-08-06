@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <title>DevFit</title>
+        <style>
+
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://source.unsplash.com/1600x900/?Gym);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+          }
+        
+        	#login-box{
+	position:  relative;
+	margin: 5% auto;
+	height: 400px;
+	width: 600px;
+	background : #fff;
+	box-shadow: 0 2px 4px rgba(1.0,1.0,1.0,1.0);
+}
+.left-box{
+	position: absolute;
+	top: 20;
+	left: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 300px;
+	height: 400px;
+}
+h1
+{
+	margin: 0 0 20px 0;
+	font-weight: 300;
+	font-size: 28px;
+}
+input[type= "text"],
+input[type="password"]
+{
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 4px;
+	width: 220px;
+	height: 32px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #aaa;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	transition: 0.2s ease;
+}
+input[type="submit"]
+{
+	margin-bottom: 28px;
+	width: 120px;
+	height: 32px;
+	background: #f44336;
+	border:#fff ;
+	font-family: sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+	background: #ff5722;
+	transition: 0.2s ease;
+}
+.right-box
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;;
+	padding: 40px;
+	width: 300px;
+	height: 400px;
+	background-image: url(bc.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.or{
+	position: absolute;
+	top: 180px;
+	left: 280px;
+	width: 40px;
+	height: 40px;
+	background: #efefef;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+	line-height: 40px;
+	text-align: center;
+}
+.right-box .signinwith{
+	display: block;
+	margin-bottom: 40px;
+	font-size: 28px;
+	color: #blue;
+	text-align: center;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+button.social
+{
+	margin-bottom: 20px;
+	width: 220px;
+	height: 36px;
+	border:none;
+	border-radius: 2px;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 500;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+.facebook{
+	background: #32508e;
+}
+.twitter{
+	background: #55acee;
+}
+.google{
+	background: #dd4b39;
+}
+        </style>
+	
+</head>
+<body>
+	<header>
+  <header class="text-white-700 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-white-xl">D-Fit</span>
+              </a>
+              <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-white-400	flex flex-wrap items-center text-base justify-center">
+                <a href="DevFit.html" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+                <a href="service.html" class="mr-5 hover:text-gray-900">Services</a>
+                <a href="contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+              </nav>
+              <a href="Enroll.html" class="inline-flex items-center bg-white-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Enroll Now</a>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+				<div id="login-box">
+					<div class="left-box">
+						<h1> sign up </h1>
+						<input type="text" name="username" placeholder="Username"/>
+						<input type="text" name="email" placeholder="Email"/>
+						<input type="password" name="password" placeholder="Password"/>
+						<input type="password" name="password2" placeholder="Retype password"/>
+				<input type="submit" name="signup-button" value="Sign Up"/>
+</div>
+				<div class="right-box">
+					<span class="signinwith"> Sign in with </br> Social Network </span>
+					<button class="social facebook"> Log in with Facebook </button>
+					<button class="social twitter"> Log in with twitter </button>
+					<button class="social google"> Log in with google+ </button>
+				</div>
+				<div class="or">OR </div>
+
+
+
+				
+			</ul>
+			</header>
+</body>
+</html>
