@@ -1,3 +1,4 @@
+<!---Made some changes in background image properties, div blocks backgeound etc-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,24 +8,25 @@
         <title>DevFit</title>
         <style>
         body{
-            background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://source.unsplash.com/1600x900/?Gym);
-            height: 100vh;
+            background-image: url(https://source.unsplash.com/1600x900/?Gym);
+            background-repeat: no-repeat;
+            height: 150vh;
             background-size: cover;
             background-position: center;
           }
         </style>
     </head>
     <body>
-			<header class="text-gray-700 body-font">
+			<header class="text-gray-700 body-font" style="background-color: rgb(0, 0, 0, 0.3);">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
               <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                 </svg>
-                <span class="ml-3 text-xl">D-Fit</span>
+                <span class="ml-3 text-xl" style="color: white;">D-Fit</span>
               </a>
-              <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-                <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+              <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center " style="color: white;">
+                <a href="index.html" class="mr-5 hover:text-white-900">Home</a>
                 <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
                 <a href="service.html" class="mr-5 hover:text-gray-900">Services</a>
                 <a href="contact.html" class="mr-5 hover:text-gray-900">Contact</a>
@@ -38,14 +40,14 @@
           </header>
         <section class="text-gray-700 body-font">
   <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h2 class="text-xs text-orange-500 tracking-widest font-medium title-font mb-1">DevFit offers</h2>
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">What is Your goal?</h1>
+    <div class="flex flex-col text-center w-full mb-20" style="margin-left: 350px; width: 500px; border-radius: 30px; background-color: rgb(0, 0, 0, 0.3); color: white;">
+      <h2 class="text-xs text-orange-500 tracking-widest font-medium title-font mb-1" style="font-size: 15px;">DevFit offers</h2>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="color: white;">What is Your goal?</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The fitness industry seems to focus on people who are already fit, which leaves 80% of the population feeling left out. We want to change that.</p>
     </div>
-    <div class="flex flex-wrap">
-      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">FatLoss</h2>
+    <div  style="display: flex; border-radius: 30px; background-color: rgb(0, 0, 0, 0.8); color: white; height: 320px; width: 900px; margin-left: 150px; ">
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-4 border-l-2 border-gray-200" >
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2" style="color: white;">FatLoss</h2>
         <p class="leading-relaxed text-base mb-4">Running, walking, cycling and swimming are just a few examples of some cardio exercises that can help burn fat and kick-start weight loss.</p>
         <a class="text-orange-500 inline-flex items-center">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -53,8 +55,8 @@
           </svg>
         </a>
       </div>
-      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Muscle Gain</h2>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-4 border-l-2 border-gray-200" >
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2" style="color: white;">Muscle Gain</h2>
         <p class="leading-relaxed text-base mb-4"> Here's how fast you can expect to build muscle on average: Average Natural MAN: between 0.25 and 0.5 pounds of muscle per week</p>
         <a class="text-orange-500 inline-flex items-center">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -62,8 +64,8 @@
           </svg>
         </a>
       </div>
-      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Reduce Manboobs</h2>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-4 border-l-2 border-gray-200">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2" style="color: white;">Reduce Manboobs</h2>
         <p class="leading-relaxed text-base mb-4">You can't lose your man boobs by doing a gazillion of chest exercises, just like you can't lose your belly fat by doing endless situps</p>
         <a class="text-orange-500 inline-flex items-center">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -71,8 +73,8 @@
           </svg>
         </a>
       </div>
-      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Six Pack Abs</h2>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-4 border-l-2 border-gray-200">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2" style="color: white;">Six Pack Abs</h2>
         <p class="leading-relaxed text-base mb-4">Abdominal crunches, bridges and planks are a few of the most popular exercises that can help strengthen your abdominal muscles</p>
         <a class="text-orange-500 inline-flex items-center">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -81,7 +83,7 @@
         </a>
       </div>
     </div>
-    <button class="flex mx-auto mt-16 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg">Go</button>
+    <button class="flex mx-auto mt-16 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg" style="border-radius: 30px;">Go</button>
   </div>
 </section>
     </body>
